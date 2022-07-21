@@ -10,4 +10,14 @@ all([1, "TEST", 1 < 2, 2 + 3 == 5]) # True
 
 위 코드는 모든 값, 식이 boolean으로 변환됐을 때, 모두 True이므로 True가 return된다.
 
+```python
+def all(iterable):
+    for element in iterable:
+        if not element:
+            return False
+    return True
+```
+
+all()은 내부적으로 위와 같이 구현돼있다.
+
 출처 : <a href="https://www.daleseo.com/python-all/">DaleSeo</a>
